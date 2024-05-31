@@ -8,7 +8,7 @@ from random import randrange
 
 def generate_board(width: int, height: int, mine_percent: float) -> [[str]]:
 	board = [[0 for w in range(width)] for h in range(height)]
-	mine_count = width * height * (mine_percent / 100)
+	mine_count = int(width * height * (mine_percent / 100))
 
 	while mine_count:
 		x = randrange(0, width)
