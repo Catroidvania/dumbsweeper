@@ -70,7 +70,8 @@ if __name__ == "__main__":
 
 	board = generate_board(width, height, percent)
 
+	print(f"`@ are mines, . is a blank square, {int(width * height * (percent / 100))} mines on this board`")
 	for r in board:
 		for c in r:
-			print(f"||{c}|| ", end='')
+			print(f"||`{c}`|| ", end='')
 		print()
