@@ -72,5 +72,5 @@ if __name__ == "__main__":
 
 	for r in board:
 		for c in r:
-			print(f"||{c}|| ")
-		print("\n")
+			print(f"||{c}|| ", end='')
+		print()
